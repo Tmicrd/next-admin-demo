@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.menu {
+  flex: 1;
+  background-color: var(--bgSoft);
+  padding: 20px;
+}
+
+/* 4 times bigger than menu */
+.content {
+  flex: 4;
+  padding: 20px;
+}
