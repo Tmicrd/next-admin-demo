@@ -39,3 +39,21 @@
   font-size: 13px;
   margin: 10px 0px;
 }
+
+.logout {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: none;
+  color: var(--text);
+}
+
+.logout:hover {
+  background: #2e374a;
+}
