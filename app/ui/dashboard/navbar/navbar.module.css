@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 10px;
   background-color: var(--bgSoft);
 }
@@ -16,15 +16,15 @@
 .menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .search {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: #2e374a;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 10px;
 }
 
@@ -37,5 +37,5 @@
 
 .icons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }

@@ -1,0 +1,41 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 1.25rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1.25rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container:hover {
+  background-color: #2e374a;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title {
+  color: var(--textSoft);
+}
+
+.number {
+  font-style: 2rem;
+  font-weight: bold;
+}
+
+.detail {
+  color: var(--textSoft);
+  font-size: 0.9rem;
+}
+
+.positive {
+  color: lime;
+}
+
+.negative {
+  color: red;
+}

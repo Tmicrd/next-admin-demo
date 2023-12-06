@@ -1,4 +1,3 @@
-import React from "react";
 import Sidebar from "../ui/dashboard/sidebar/page";
 import Navbar from "../ui/dashboard/navbar/page";
 import styles from "../ui/dashboard/dashboard.module.css";
