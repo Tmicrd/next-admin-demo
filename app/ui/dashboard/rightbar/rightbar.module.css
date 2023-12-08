@@ -26,7 +26,8 @@
 .text {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .notification {
@@ -36,12 +37,12 @@
 .subtitle {
   color: var(--textSoft);
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 .desc {
   color: var(--textSoft);
-  font-size: 0.875rem;
+  font-size: 0.7rem;
 }
 
 .button {
