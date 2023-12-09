@@ -6,6 +6,7 @@
   flex: 1;
   background-color: var(--bgSoft);
   padding: 1.25rem;
+  min-height: 100vh;
 }
 
 /* 4 times bigger than menu */
