@@ -24,7 +24,7 @@ const ProductsPage = async ({ searchParams }) => {
           <tr>
             <td>Title</td>
             <td>Description</td>
-            <td>Ptice</td>
+            <td>Price</td>
             <td>Created At</td>
             <td>Stock</td>
             <td>Action</td>

@@ -20,8 +20,6 @@
     "use-debounce": "^9.0.4"
   },
   "devDependencies": {
-    "@types/node": "20.10.3",
-    "@types/react": "18.2.41",
     "eslint": "8",
     "eslint-config-next": "14.0.1"
   }
