@@ -23,7 +23,6 @@ export const fetchUser = async (id) => {
     await connectToDB();
 
     const user = await User.findById(id);
-    console.log("user: ", user);
     return user;
   } catch (error) {
     console.log("error: ", error);
