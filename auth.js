@@ -1,7 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { authConfig } from "./authconfig";
-import { connect } from "mongoose";
 import { connectToDB } from "./app/lib/utils";
 import { User } from "./app/lib/models";
 import bcrypt from "bcrypt";
@@ -13,7 +12,7 @@ const login = async (credentials) => {
 
     if (!user) throw new Error("Wrong credentials");
     const isPasswordCorrect = await bcrypt.compare(
-      credentials.passwordword,
+      credentials.password,
       user.password
     );
 
@@ -39,4 +38,20 @@ export const { signIn, signOut, auth } = NextAuth({
       },
     }),
   ],
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.username = user.username;
+        token.img = user.img;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (token) {
+        session.user.username = token.username;
+        session.user.img = token.img;
+      }
+      return session;
+    },
+  },
 });
